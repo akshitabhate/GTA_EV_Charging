@@ -1,8 +1,7 @@
-setuptools>=42
+setuptools
 wheel
-streamlit==1.38.0
-geopandas==1.0.1
-numpy==1.23.5
+streamlit
+geopandas
 pandas
 folium
 streamlit-folium
