@@ -6,24 +6,24 @@ from folium.plugins import HeatMap
 import pandas as pd
 
 # Load GTA and Toronto Hydro service area GeoJSON files
-gta_geojson = '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/Toronto2.geojson'
-ev_charing_station_geojson = '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/Toronto_City_EV_Chargers_WGS84.geojson'
+gta_geojson = 'data/Toronto2.geojson'
+ev_charing_station_geojson = 'data/Toronto_City_EV_Chargers_WGS84.geojson'
 
 gta = gpd.read_file(gta_geojson)
 ev_stations = gpd.read_file(ev_charing_station_geojson)
 
 # Load EV sales data for each quarter
 ev_sales_files = {
-    "Q1 2022": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q1_2022.csv',
-    "Q2 2022": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q2_2022.csv',
-    "Q3 2022": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q3_2022.csv',
-    "Q4 2022": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q4_2022.csv',
-    "Q1 2023": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q1_2023.csv',
-    "Q2 2023": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q2_2023.csv',
-    "Q3 2023": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q3_2023.csv',
-    "Q4 2023": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q4_2023.csv',
-    "Q1 2024": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q1_2024.csv',
-    "Q2 2024": '/Users/harshbhate/Codes/GTA-EV-Infrastructure/data/ev_sales/q2_2024.csv'
+    "Q1 2022": 'data/ev_sales/q1_2022.csv',
+    "Q2 2022": 'data/ev_sales/q2_2022.csv',
+    "Q3 2022": 'data/ev_sales/q3_2022.csv',
+    "Q4 2022": 'data/ev_sales/q4_2022.csv',
+    "Q1 2023": 'data/ev_sales/q1_2023.csv',
+    "Q2 2023": 'data/ev_sales/q2_2023.csv',
+    "Q3 2023": 'data/ev_sales/q3_2023.csv',
+    "Q4 2023": 'data/ev_sales/q4_2023.csv',
+    "Q1 2024": 'data/ev_sales/q1_2024.csv',
+    "Q2 2024": 'data/ev_sales/q2_2024.csv'
 }
 
 # Initialize session state for the selected quarter
